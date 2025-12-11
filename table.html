@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        /* 大外框 table */
+        .tb {
+            border: 5px solid red;
+            border-collapse: collapse;
+            /* 讓儲存格去共用同一個邊  且一定要外面大於裡面的  不然外面的不會顯示*/
+            width: 400px;
+
+        }
+
+        /* th 為表頭內容儲存格 =title   th數量會等於td 數量:合理 */
+        /* td 為資料內容儲存格 =column */
+        td,
+        th {
+            border: 3px solid pink;
+
+        }
+
+        thead {
+            background-color: purple;
+            color: white;
+        }
+
+        tbody {
+            background-color: rgb(212, 73, 212);
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: rgb(125, 72, 122);
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: rgb(222, 126, 211);
+        }
+
+        tbody tr:hover {
+            background-color: yellow;
+        }
+
+        tbody td:hover {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+
+<body>
+    <table class="tb">
+        <!-- caption 屬於table 的標題 不是 column title 喔 且事先有caption 再有h2-->
+        <caption>
+            <h2>紫色大表格</h2>
+        </caption>
+        <thead>
+            <tr>
+                <th>欄位1</th>
+                <th>欄位2</th>
+                <th>欄位3</th>
+                <th>欄位4</th>
+            </tr>
+            <tr>
+                <!-- colanspan左右  、  rowanspan上下 合併  -->
+                <th colspan="2">欄位12</th>
+                <th colspan="2">欄位34</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4">rowspan</td>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+
+            </tr>
+        </tbody>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+</body>
+
+</html>

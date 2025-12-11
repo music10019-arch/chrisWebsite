@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxModel</title>
+    <link rel="stylesheet" href="styles/HW.css">
+
+    <style>
+        * {
+            /* 因為預設不是0 先把所有的預設都取消變成0 */
+            margin: 0;
+            padding: 0
+        }
+
+        body {
+            background-color: rgb(196, 186, 172);
+        }
+
+        .box {
+            background-color: rgb(253, 253, 250);
+            border-radius: 25px;
+            box-shadow: -10px 5px 5px pink;
+            border: 10px solid;
+            border-image: linear-gradient(to top, rgb(131, 179, 188), rgb(14, 14, 221)) 1;
+            width: 100;
+            /* 這樣會隨螢幕大小調整 好!!!! */
+            padding: 20px;
+            /* margin: 50px 90px 50px 90px;  auto 就是致中 */
+            margin: 50px 60px auto;
+        }
+
+        /* 有h2 但寫在 HW.csscss  */
+
+        figure {
+            /* 想 你希望浮動的是 他的下一個元素  你希望段落浮動 所以設在figure 合理 */
+            float: left;
+            /* display: inline-block; */
+            /* 關鍵 讓figure 變成inline 才不會獨佔一行 */
+            padding: 15px 15px 0 15px;
+            margin: 1px 20px 0px 10px;
+
+            border: 2px solid blue;
+            box-sizing: border-box;
+        }
+
+        figure img {
+            width: 480px;
+            margin: 0px;
+
+        }
+
+        figure img :hover {
+            width: 550px;
+        }
+
+        figcaption {
+            background-color: rgb(10, 144, 222);
+            text-align: center;
+            font-size: 24px;
+        }
+
+        p {
+            margin: 10px;
+            background-color: rgb(234, 234, 165);
+            text-indent: 2em;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="box">
+        <h2>台灣珍稀保育類物種「蘇眉魚」</h2>
+        <figure style="background-color: rgb(110, 163, 232);">
+            <img class="img2" src="images//蘇美.jpg" alt="圖片壞了" title="大嘴唇蘇眉魚" width="30px">
+            <figcaption>大嘴唇蘇眉魚</figcaption>
+        </figure>
+
+
+        <p>
+            海洋委員會透過新聞稿表示，保育類動物數量瀕危時，成熟的養殖技術，將有助於野生族群恢復的可能性，這也是海委會於2019年核准屏科大與業者申請案的原因之一。
+
+        <p>
+            至於該業者於成果發布記者會上提出之放流復育，屬於第二階段工作，海委會強調將審慎評估，包括從基因遺傳分析，確認目前復育之幼體與野外族群屬於同一物種；衡量繁養殖的幼體能否適應野外環境；確保放流地點生態的健康度，以避免放生反成為放死等。在未訂定清楚的放流復育指引，以及完成蘇眉魚相關遺傳到生態系的評估前，不應貿然嘗試復育放流。
+        </p>
+        <p>
+            日前三讀通過的《海洋保育法》。在建立海洋生物復育評估指引、海洋保護區整合管理，以及海洋庇護區劃定等，都有對應條文，海洋保育署近期也將邀請專家學者討論，從法制、科學調查、與資源監測等，多方集思廣益，尋求周延保育方案。
+        </p>
+        <p>
+            該申請案業者為龍佃海洋生物科技公司（下簡稱龍佃），根據官網說明，龍佃於2019年時，向海洋委員會海洋保育署申請、獲准進口印尼蘇眉魚種魚進行人工復育，並邀請屏東科技大學水產養殖系教授共同研究，終於於本（7）月12日召開記者會宣布研究成果。
+        </p>
+        <p>
+            海委會副主委黃向文也表示，物種保育方法在於減少其瀕危威脅。蘇眉魚主要受脅原因為非法捕撈，及珊瑚礁棲地破壞。對此，禁止採捕、嚴格管制國際貿易規範，以及運用海洋保護區網絡應是優先行動，海保署也積極推動公民科學家等方式，進行調查。台灣與日本位處太平洋分佈北界，極有可能受到相同隔離效應影響，而本次人工繁殖之親魚皆來自印尼，在沒有任何相關研究前，不應貿然放流。
+        </p>
+        <p>
+            中山大學海洋生物科技暨資源學系副教授劉商隱則於18日投書自由評論網表示，儘管過去有研究指出，蘇眉魚太平洋族群基因交流頻繁，但位於分佈邊緣仍有可能因隔離效應，形成有遺傳變異的族群。台灣與日本位處太平洋分佈北界，極有可能受到相同隔離效應影響，而本次人工繁殖之親魚皆來自印尼，在沒有任何相關研究前，不應貿然放流。中山大學海洋生物科技暨資源學系副教授劉商隱則於18日投書自由評論網表示，儘管過去有研究指出，蘇眉魚太平洋族群基因交流頻繁，但位於分佈邊緣仍有可能因隔離效應，形成有遺傳變異的族群。
+        </p>
+        <p>
+            在香港等地作為高級食材使用,21世紀後大量的捕撈讓它們出現滅絕的危機；國內外的水族館有很多地方養殖蘇眉魚，想看「野生」蘇眉魚越來越難了，它奇特怪異的外表深受廣大潛水客喜愛!深受台灣旅客、香港旅客好評，希望有機會能為各位的沖繩旅遊留下美好回憶。若想前往沖繩人氣No.1的潛點「青之洞窟(藍洞／青洞)」，敬請選擇CP值超高的我們。
+        </p>
+
+
+
+
+
+    </div>
+</body>
+
+</html>

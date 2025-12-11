@@ -1,0 +1,16 @@
+      .list1 {
+          list-style-type: circle;
+          background-color: lightgreen;
+          list-style-image: url(../images/arrowblue.png);
+          /* 因為現在搬到style資料夾裡面  圖片路徑已經改變 注意階層*/
+          border: 5px dotted blue;
+          border-radius: 20px 0 200px 60px;
+      }
+
+      .list2 {
+          list-style-type: upper-alpha;
+          list-style-image: none;
+          background-color: rgb(9, 170, 9);
+
+
+      }
