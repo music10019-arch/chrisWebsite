@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Input Type</title>
+    <style>
+        .t1 {
+            width: 100px;
+            float: left;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="get">
+        <p>
+            <label class="t1" for="">date:</label>
+            <input type="date" name="date1">
+        </p>
+        <p>
+            <label for="" class="t1">datetime:</label>
+            <input type="datetime-local" name="dt1">
+        </p>
+        <p>
+            <label for="" class="t1">month:</label>
+            <input type="month" name="month1">
+        </p>
+        <p>
+            <label for="" class="t1">time:</label>
+            <input type="time" name="time1">
+        </p>
+        <p>
+            <label for="" class="t1">week:</label>
+            <input type="week" name="week1">
+        </p>
+        <p>
+            <label class="t1">URL:</label>
+            <input type="url" name="url1">
+        </p>
+        <p>
+            <label class="t1">數字:</label>
+            <input type="number" name="number" min="0" max="100" step="5" value="25">
+        </p>
+        <p>
+            <label class="t1">數字滑桿:</label>
+            <input type="range" name="range" min="0" max="100" step="5" value="25">
+        </p>
+        <p>
+            <label class="t1">調色盤:</label>
+            <input type="color" name="color" value="#0bf4e4">
+        </p>
+        <p>
+            <label class="t1">ID:</label>
+            <input type="text" name="idcode" maxlength="10" pattern="[A-Z]{1}[1-2]{1}[0-9]{8}">
+        </p>
+
+        <!-- pattern 怎麼用 -->
+        <!-- \ 就是 數字 0-9 -->
+        <!-- {} 裡面代表 出現次數 可以重複寫 -->
+        <!-- pattern 裡的 {} 完全是有順序的，而且是 從左到右，逐字比對 -->
+
+
+
+        <input type="submit" value="送出">
+    </form>
+</body>
+
+</html>
