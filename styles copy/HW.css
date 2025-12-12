@@ -1,0 +1,24 @@
+   h2 {
+       margin: 10px;
+       text-align: left;
+       text-shadow: 0px -15px 3px rgb(218, 4, 4);
+       background: linear-gradient(to left, #4cbe5f, #b2e7a6);
+       background-size: 50% 200%;
+       /* 一般要比原本的大 才會包在裡面，現在是故意看他跑 */
+       /* 水平 50% → 背景為 元素的50% 比block窄 -> 有默認剩下50%重複 */
+       animation: bgAnimate 2s infinite alternate;
+   }
+
+   @keyframes bgAnimate {
+       0% {
+           background-position: -90% 25%;
+           /* 元素框（element box) 就是整個 block
+           -90% 就是背景水平向左移動 元素框寬度的 90% */
+
+       }
+
+       100% {
+           background-position: 90% 75%;
+       }
+
+   }

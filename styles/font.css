@@ -1,0 +1,58 @@
+        /* 可以想成 是先下載 */
+        @font-face {
+            font-family: font1;
+            src: url(../fonts/JustOldFashion.ttf);
+        }
+
+        /* 才要套用到之後的標籤 */
+        .font1 {
+            font-family: font1;
+        }
+
+        @font-face {
+            font-family: font2;
+            src: url(../fonts/SCRIPTIN.ttf);
+        }
+
+        .font2 {
+            font-family: font2;
+        }
+
+
+        .font3 {
+            font-family: "BBH Bartle", sans-serif;
+            /* 會有兩個名稱 因為 怕對方的無效了 
+            所以第二個 是一個確保 */
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        /* 也可以使用 google fonts 的 import 方法 */
+        /* @import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Bitcount+Prop+Double+Ink:wght@100..900&display=swap');
+
+
+
+        .font4 {
+            font-family: "BBH Bartle", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
+        .font44 {
+            font-family: "Bitcount Prop Double Ink", system-ui;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+                "slnt" 0,
+                "CRSV" 0.5,
+                "ELSH" 80,
+                "ELXP" 50,
+                "SZP1" 50,
+                "SZP2" 100,
+                "XPN1" 60,
+                "XPN2" 80,
+                "YPN1" 20,
+                "YPN2" 60;
+        } */
